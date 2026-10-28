@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Arial;
+            margin: 20px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        #formSection {
+            background-color: white;
+            border: 2px solid darkblue;
+            padding: 20px;
+            margin: 20px auto;
+            width: 350px;
+            position: relative;
+        }
+
+        .heading {
+            color: darkgreen;
+        }
+
+        .field {
+            margin-bottom: 10px;
+        }
+
+        input, select, textarea {
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: yellow;
+            padding: 5px;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+<nav>
+    <a href="index.html">Home</a> |
+    <a href="form.html">Register</a> |
+    <a href="thanks.html">Thank You</a>
+</nav>
+<hr>
+
+
+    <a href="index.html">Home</a>
+
+    <h1>Registration Form</h1>
+
+    <section id="formSection">
+
+        <span class="badge">New</span>
+
+        <h2 class="heading">Student Details</h2>
+
+        <form action="thanks.html" method="get">
+
+            <div class="field">
+                Full Name:<br>
+                <input type="text" name="fullname"
+                placeholder="Enter your name" required>
+            </div>
+
+            <div class="field">
+                Registration No:<br>
+                <input type="text" name="regno" required>
+            </div>
+
+            <div class="field">
+                Email:<br>
+                <input type="email" name="email" required>
+            </div>
+
+            <div class="field">
+                Phone:<br>
+                <input type="tel" name="phone"
+                placeholder="03XXXXXXXXX">
+            </div>
+
+            <div class="field">
+                Age:<br>
+                <input type="number" name="age" min="16" max="40">
+            </div>
+
+            <div class="field">
+                Date of Birth:<br>
+                <input type="date" name="dob">
+            </div>
+
+            <div class="field">
+                Gender:<br>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </div>
+
+            <div class="field">
+                Department:<br>
+                <select name="department">
+                    <option>AI</option>
+                    <option>CS</option>
+                    <option>SE</option>
+                    <option>EE</option>
+                </select>
+            </div>
+
+            <div class="field">
+                Interests:<br>
+                <input type="checkbox" name="interest" value="Web"> Web
+                <input type="checkbox" name="interest" value="AI"> AI
+                <input type="checkbox" name="interest" value="Games"> Games
+            </div>
+
+            <div class="field">
+                Address:<br>
+                <textarea name="address" rows="4"></textarea>
+            </div>
+
+            <div class="buttons">
+                <!-- Inline CSS -->
+                <input type="submit" value="Register"
+                style="background-color: green; color: white;">
+
+                <input type="reset" value="Clear">
+            </div>
+
+        </form>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+
+/* External CSS */
+
+a {
+    color: darkblue;
+    font-size: 18px;
+}
+
+a:hover {
+    color: red;
+}
+
+input[type="submit"], input[type="reset"] {
+    padding: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+textarea {
+    border: 1px solid gray;
+}
